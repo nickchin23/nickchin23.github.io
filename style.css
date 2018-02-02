@@ -1,0 +1,57 @@
+
+body{
+    background-color: cornflowerblue
+}
+.container{
+    background-color: black;
+}
+.row{
+    padding:10px 0px;   
+}
+.banner{
+    background-color: aqua;
+}
+.navbar{
+    background-color: coral;
+}
+.navbar a{
+    background-color: white;
+    color: crimson;
+    display: block;
+    padding: 10px;
+    float: right;
+    font-size: 30px;
+}
+h1{
+    color: dodgerblue;
+}
+h1 a:hover { 
+text-decoration:none; 
+}
+ul{
+    background-color: lemonchiffon;
+    padding: 10px;
+}
+li{
+    padding: 10px;
+    display: block;
+    font-size: 18px;
+     list-style-type: none;
+}
+.aboutme{
+    background-color:darkseagreen;
+    padding: 5px 10px 5px 10px;
+}
+.gallery{
+    background-color:lightpink;
+    padding: 5px 10px 5px 10px;
+}
+.social{
+    background-color:yellow;
+    padding: 5px 10px 5px 10px;
+}
+.footer{
+    text-align: center;
+    color:white;
+    padding:10px 0px 0px 20px;
+}
