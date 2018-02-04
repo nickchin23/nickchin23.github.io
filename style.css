@@ -1,6 +1,8 @@
 
 body{
-    background-color: cornflowerblue
+    background-color: cornflowerblue;
+    border: 1px solid;
+    box-shadow: 10px 10px;
 }
 .container{
     background-color: black;
@@ -11,9 +13,9 @@ body{
 .banner{
     background-color: aqua;
 }
-.navbar{
-    background-color: coral;
-}
+.nav-bar{
+    background-color: blue;
+}/*
 .navbar a{
     background-color: white;
     color: crimson;
@@ -22,6 +24,69 @@ body{
     float: right;
     font-size: 30px;
 }
+.navbar{
+    overflow: hidden;
+    background-color: coral;
+}
+.navbar a{
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;    
+}
+*/
+.navigation{
+    background-color: pink;
+}
+.navigation ul{
+  float: right;
+  list-style-type: none;
+  position: relative;
+  z-index: 1;
+}
+.navigation ul a{
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 0 30px;
+  line-height: 32px;
+  font-size: 100%
+}
+.navigation ul li{
+  position: relative;
+  float: left;
+  margin:0;
+  padding:0;
+}
+.navigation ul li:hover{           
+  background: silver;
+}
+.navigation ul li a:hover {     
+  color: midnightblue;
+}
+.navigation ul ul{
+position:absolute;
+background: grey;         
+padding: 0px;
+display: none;
+top: 100%;
+}
+.navigation ul ul li{
+float: none; 
+width: 213px;
+}
+.navigation ul ul a{
+  padding: 5px 10px;
+}
+.navigation ul ul ul{
+left: 100%;
+background: #333;
+top: 0;
+}
+.navigation ul li:hover >  ul{
+display: block;
+}
+/* ********************************* */
 img{
     width: 100%;
 }
@@ -30,27 +95,26 @@ h1{
 }
 h1 a:hover { 
     text-decoration:none; 
-}
-
+}/*
 ul{
     background-color: lemonchiffon;
     padding: 10px;
-}
+}*/
 li{
     padding: 10px;
     display: block;
     font-size: 18px;
-     list-style-type: none;
+    list-style-type: none;
 }
-.aboutme{
+.aboutme, .template1{
     background-color:darkseagreen;
     padding: 5px 10px 5px 10px;
 }
-.gallery{
+.gallery, .template2{
     background-color:lightpink;
     padding: 5px 10px 5px 10px;
 }
-.social{
+.social, .template3{
     background-color:yellow;
     padding: 5px 10px 5px 10px;
 }
