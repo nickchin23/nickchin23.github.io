@@ -69,7 +69,6 @@ top: 0;
 }
 .navigation ul li:hover > ul{
 display: block;
-
 }
 img{
     width: 100%;
