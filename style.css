@@ -1,19 +1,27 @@
+.logo{
+    height: 200px;
+    width: 200px;
+}
+.banner{
+    width: 900px;
+    }
 body{
-    background-color: cornflowerblue;
-    border: 1px solid;
-    box-shadow: 10px 10px;
+    background-color: lightyellow;
 }
 .container{
-    background-color: black;
+    background-color: lightgray;
+    border: solid 1px black;
 }
 .row{
     padding:10px 0px; 
 }
-.banner{
-    background-color: aqua;
+.top-bar{
+    background-color: darkblue;
+    padding-top: 50px;
+    padding-left: 45px;;
 }
 .nav-bar{
-    background-color: hotpink; 
+    background-color: darkgreen; 
 }
 .navigation ul{
   float: right;
@@ -74,26 +82,27 @@ img{
     width: 100%;
 }
 h1{
-    color: dodgerblue;
+    color: white;
+    
 }
 h1 a:hover { 
     text-decoration:none; 
 }
-    li{
+li{
     padding: 10px;
     display: block;
     font-size: 18px;
     list-style-type: none;
 }
-.aboutme, .template1{
+.aboutme, .template1, .flash, .mlbtableau{
     background-color:darkseagreen;
     padding: 5px 10px 5px 10px;
 }
-.gallery, .template2{
+.gallery, .template2, .gamereview{
     background-color:lightpink;
     padding: 5px 10px 5px 10px;
 }
-.social, .template3{
+.social, .template3, .replica{
     background-color:yellow;
     padding: 5px 10px 5px 10px;
 }
@@ -101,4 +110,24 @@ h1 a:hover {
     text-align: center;
     color:white;
     padding:10px 0px 0px 20px;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%; padding-right: 0px;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
