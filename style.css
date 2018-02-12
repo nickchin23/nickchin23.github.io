@@ -8,6 +8,9 @@
 body{
     background-color: lightyellow;
 }
+p{
+    font-size: 16px;
+}
 .container{
     background-color: lightgray;
     border: solid 1px black;
@@ -94,21 +97,24 @@ li{
     font-size: 18px;
     list-style-type: none;
 }
-.aboutme, .template1, .flash, .mlbtableau{
+.profile{
+    padding: 20px;
+}
+.aboutme, .template1, .flash, .sci{
     background-color:darkseagreen;
     padding: 5px 10px 5px 10px;
 }
-.gallery, .template2, .gamereview{
+.gallery, .template2, .mlbtableau {
     background-color:lightpink;
     padding: 5px 10px 5px 10px;
 }
-.social, .template3, .replica{
+.social, .template3, .gamereview{
     background-color:yellow;
     padding: 5px 10px 5px 10px;
 }
 .footer{
     text-align: center;
-    color:black;
+    color: black;
     padding:10px 0px 0px 20px;
 }
 
