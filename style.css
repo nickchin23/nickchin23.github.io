@@ -101,15 +101,15 @@ li{
 .profile{
     padding: 20px;
 }
-.aboutme, .flash, .sci, .contactinfo{
+.aboutme, .contactinfo,.flash, .gamereview{
     background-color:darkseagreen;
     padding: 5px 10px 5px 10px;
 }
-.mlbtableau {
+.website,.sci {
     background-color:lightpink;
     padding: 5px 10px 5px 10px;
 }
-.gamereview{
+.mlbtableau{
     background-color:yellow;
     padding: 5px 10px 5px 10px;
 }
