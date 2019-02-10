@@ -23,3 +23,18 @@ function testimonybutton() {
     w.style.display = "block";
   }
 }
+ function toggle_story1(id) {
+       var x1 = document.getElementById(id);
+       if(x1.style.display == 'block')
+          x1.style.display = 'none';
+       else
+          x1.style.display = 'block';
+    }
+ function toggle_story2(id) {
+       var x2 = document.getElementById(id);
+       if(x2.style.display == 'block')
+          x2.style.display = 'none';
+       else
+          x2.style.display = 'block';
+    }
+ 
