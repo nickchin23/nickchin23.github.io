@@ -18,10 +18,27 @@
 <body>
   <div class="container-fluid">
 
+     <!--Ticker-->
+     <div class="row tickerheight">
+    <div class="col-sm-3 news">
+        <h4><b>Announcements: </b></h4>
+        </div>
+    <div class="col-sm-9 tcontainer">
+    <div class="ticker-wrap">
+      <div class="ticker-move">
+          <div class="ticker-item"><h4><b>Happy New Year!</b></h4></div>
+          <div class="ticker-item"><h4><b>Remember to make appointments for 2019</h4></b></div>
+          <div class="ticker-item"><h4><b>February 1, first workshop meeting</h4></b></div>
+          <div class="ticker-item"><h4><b>Starting 2019, group wellness sessions</h4></b></div>
+      </div>
+    </div>
+  </div>
+    </div>
+      
     <!--Logo-->
     <div class="row">
       <div class="col-sm-9">
-        <img src="logo.png" class="logo">
+        <img src="images/logo.png" class="logo">
       </div>
       <div class="col-sm-3 pad">
         <p><b>Dr. Yinghua Wu</b>
@@ -51,48 +68,28 @@
       </div>
     </div>
 
-    <!--Ticker-->
-    <div class="row">
-      <div class="col-sm-1">
-        <h4>News:</h4>
-      </div>
-      <div class="col-sm-11">
-        <div class="tcontainer">
-          <div class="ticker-wrap">
-            <div class="ticker-move">
-              <div class="ticker-item">
-                <h4>Happy New Year!</h4>
-              </div>
-              <div class="ticker-item">
-                <h4>Remember to make appointments for 2019</h4>
-              </div>
-              <div class="ticker-item">
-                <h4>February 1, first workshop meeting</h4>
-              </div>
-              <div class="ticker-item">
-                <h4>Starting 2019, group wellness sessions</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+   
 
     <!--Category-->
     <!--Stories-->
     <!--Home Remedies-->
     <div class="row digest">
-      <div class="col-sm-1"></div>
-        <div class="col-sm-2">
-            <button onclick="storybutton()">Stories</button>
-            <button onclick="remedybutton()">Home Remedies</button>
-            <button onclick="testimonybutton()">Testimonies</button>
-        </div>
-          <div class="col-sm-8">
-            <div class="stories" id="story">
-              <div class="story1">
-                  <h2>"TITLE"</h2>
-                  <p>In veniam minim e quamquam, summis eiusmod probant eu ab tamen doctrina 
+      <div class="col-sm-2 buttonarea">
+
+        <button onclick="storybutton()">Stories</button>
+        <br>
+        <button onclick="remedybutton()" class="remedybutton">Home Remedies</button>
+        <br>
+        <button onclick="testimonybutton()">Testimonies</button>
+      </div>
+      <div class="col-sm-10">
+        <div class="stories" id="story">
+            
+    <!--Story1-->
+          <h1><a href="javascript:;" onclick="toggle_story1('story1');">Story 1</a></h1>
+          <img src="https://placebear.com/500/300" alt="bear placeholder" class="storyimg">
+          <div id="story1">
+            <p>In veniam minim e quamquam, summis eiusmod probant eu ab tamen doctrina 
                       despicationes do tamen proident ex reprehenderit, an e comprehenderit quo se an 
                       transferrem, ubi se aliqua ingeniis ut aliqua aliquip instituendarum. Enim iis 
                       fabulas, quo varias amet an aliquip, officia illum eu commodo exercitation, amet 
@@ -100,90 +97,59 @@
                       sed iudicem sint possumus senserit, commodo an admodum. Consequat malis summis 
                       in velit. Singulis irure legam incididunt fore, illum officia e mandaremus. Ab 
                       elit mentitum incididunt. Commodo sed quem singulis. Dolore tempor mentitum.</p>
-              </div>
-              <div class="story2">
-                  <h2>"TITLE"</h2>
-                  <p>Labore admodum distinguantur non quorum expetendis ita eruditionem. Offendit 
-                      aute doctrina singulis o dolore pariatur ad imitarentur. Dolore sempiternum 
-                      quamquam nulla expetendis, quo o summis expetendis. Enim quamquam a imitarentur, 
-                      aut ut comprehenderit. Vidisse concursionibus eu aliquip, ad malis quibusdam, do 
-                      et adipisicing, expetendis dolore iudicem laborum. A duis sint legam deserunt, 
-                      noster tempor te familiaritatem ut an voluptate illustriora se malis occaecat 
-                      reprehenderit a nisi nam o cillum expetendis, eu et voluptatibus non eu pariatur 
-                      de proident, admodum veniam occaecat. O sint firmissimum.</p>
-              </div>
-            </div>
-              
-            <div class="homeremedies" id="remedy">
-              <div class="remedy1">
-                  <p>Laboris nulla esse arbitror summis, ita fugiat occaecat deserunt ut iis ita 
-                      nulla possumus e quamquam veniam appellat. Tempor aliqua eram hic ipsum ab 
-                      expetendis summis quibusdam hic appellat nam cupidatat quo quem efflorescere 
-                      quibusdam fugiat eiusmod, enim ea cupidatat o quae, minim tractavissent ullamco 
-                      quid tempor aut in quem mentitum praesentibus id qui tamen ullamco quibusdam. Ad 
-                      occaecat coniunctione, nostrud se irure. Id ullamco firmissimum. Noster 
-                      quibusdam est coniunctione. Ad te noster quorum ipsum. Nostrud ad tempor, 
-                      litteris an ullamco.</p>
-              </div>
-              <div class="remedy2">
-                  <p>Aute aliquip ad illum veniam, do velit vidisse exquisitaque, si dolore ut summis 
-                      se nam de firmissimum, ad quae enim aut officia sed se fugiat varias o 
-                      mandaremus ea in cillum consequat aliquip quo sed noster praetermissum. 
-                      Cupidatat nisi commodo vidisse, aliqua aliquip e consectetur eu legam e id quid 
-                      litteris, enim cernantur familiaritatem, iudicem aliqua ubi excepteur 
-                      imitarentur nam admodum esse doctrina qui officia noster commodo senserit, 
-                      tempor ne tempor. In cernantur exercitation, cillum de litteris se nisi do e a 
-                      noster vidisse, te anim litteris ne id quamquam adipisicing, legam arbitror iis 
-                      expetendis, tempor ea proident iis excepteur hic magna. Hic si tamen singulis e 
-                      anim senserit coniunctione quo senserit minim fabulas laboris ne irure in 
-                      nostrud nam cernantur labore ab litteris sempiternum, sed noster legam do 
-                      incididunt ad iis nulla relinqueret iis eu ad exquisitaque. Nisi mentitum ad 
-                      admodum. An varias appellat hic quorum ullamco efflorescere. Aut lorem probant 
-                      iudicem, nostrud illum ut expetendis tractavissent, ne duis deserunt 
-                      adipisicing, noster proident ubi firmissimum.</p>
-              </div>
-            </div>
-              
-          <div class="testimony" id="test">
-            <div class="Testimony1">
-                <p>E anim nam quid a incurreret noster excepteur. Consequat graviterque ubi 
-                    admodum, expetendis ipsum sint se eram, cupidatat aute dolore nescius sint in ne 
-                    legam tempor singulis, sed tamen exercitation, occaecat eruditionem de litteris 
-                    ad si culpa incurreret, ad quo cillum excepteur. Est ipsum commodo 
-                    tractavissent, non tamen anim duis laborum an proident fugiat mentitum 
-                    expetendis, ne quis magna dolore senserit. Eu multos labore illum mandaremus. 
-                    Quamquam si offendit ab dolore sed ullamco, mentitum sed quamquam quo singulis 
-                    quid ullamco nostrud, do illum vidisse eruditionem ea ingeniis hic probant o 
-                    litteris malis labore qui quae, illum et litteris. Eu summis praetermissum, ea 
-                    veniam incididunt admodum, hic cillum quorum aut mentitum, velit vidisse ubi 
-                    summis multos. Occaecat velit si singulis voluptatibus. Malis appellat iudicem 
-                    si cernantur sunt o admodum reprehenderit.</p>
-            </div>
-            <div class="Testimony2">
-                <p>Ex quorum expetendis tractavissent in ne si exercitation, dolor te occaecat e 
-                    nulla a ex duis excepteur. Eiusmod velit litteris an probant minim laboris 
-                    vidisse. Eram an nam ipsum proident an consequat quis multos an quis, voluptate 
-                    a laborum, nostrud amet possumus o proident quem mentitum laborum ne o aut dolor 
-                    quis quid nam culpa te probant ubi ubi in minim dolor minim. Expetendis quem 
-                    fore si labore, quibusdam magna arbitror. Offendit eram ingeniis proident ne 
-                    ipsum a qui quem litteris, cernantur summis nulla est elit, nulla o qui quae 
-                    ingeniis. Proident aliqua mandaremus voluptate an non ex exquisitaque.</p>
-            </div>
-          </div>
-              
-          </div>
-          <div class="col-sm-1"></div>
+                      <!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24K1txSFWfXiTNZ9c20Q9Ic0"+"&opts=16862&num=10&ts=1549660688145");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+
+        </div>
+            
+  <!--Story2-->          
+        <h1><a href="javascript:;" onclick="toggle_story2('story2');">Story 2</a></h1>
+                      <img src="https://placekitten.com/500/300" alt="kitten placeholder" class="storyimg">
+
+          <div id="story2">
+            <p>In veniam minim e quamquam, summis eiusmod probant eu ab tamen doctrina 
+                      despicationes do tamen proident ex reprehenderit, an e comprehenderit quo se an 
+                      transferrem, ubi se aliqua ingeniis ut aliqua aliquip instituendarum. Enim iis 
+                      fabulas, quo varias amet an aliquip, officia illum eu commodo exercitation, amet 
+                      arbitror deserunt ne ea enim eram ita litteris ut se irure proident voluptate 
+                      sed iudicem sint possumus senserit, commodo an admodum. Consequat malis summis 
+                      in velit. Singulis irure legam incididunt fore, illum officia e mandaremus. Ab 
+                      elit mentitum incididunt. Commodo sed quem singulis. Dolore tempor mentitum.</p>
+                     <!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24K1txSFWfXiTNZ9c20Q9Ic0"+"&opts=16862&num=10&ts=1549737997209");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+
+        </div>
+
+      </div>
+      <div class="homeremedies " id="remedy ">
+
+
       </div>
 
+      <div class="testimony " id="test ">
 
-      <!--Footer-->
-      <div class="row">
-        <div class="col-sm-12 footer">
-          <p>©2019. The content on this website is owned by us and our licensor. Do not copy any content (including images) without our consent.</p>
-        </div>
+
       </div>
 
     </div>
+    <div class="col-sm-1 "></div>
+  </div>
+
+
+  <!--Footer-->
+  <div class="row ">
+    <div class="col-sm-12 footer ">
+      <p>©2019. The content on this website is owned by us and our licensor. Do not copy any content (including images) without our consent.</p>
+    </div>
+  </div>
+
+  </div>
 
 
 </body>
