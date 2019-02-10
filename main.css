@@ -1,5 +1,7 @@
-.container-fluid{
-    padding: 10px;
+body{
+    margin: 0px;
+    padding: 0px;
+    /*min-width: 768px;*/
 }
 h1{
  font-size: 2px;
@@ -12,10 +14,10 @@ h1{
     margin: auto;
 }
 .logo{
-  height: 150px;
+  max-height:150px;
 }
 .nav {
-  background-color: black;
+  background-color: #a6785c;
   padding-top: 8px;
 }
 ul {
@@ -27,11 +29,12 @@ li {
   padding-left: 8px;
 }
 ul a {
-  color: #A0A0A0;
+  color: white;
   font-size: 1.2em;
 }
 .nav a:hover {
-  color: white;
+    text-decoration: underline;
+    color: white;
 }
 .nav h4 {
   color: white;
@@ -40,15 +43,19 @@ ul a {
     0% { transform: translate3d(0, 0, 0); }
     100% { transform: translate3d(-100%, 0, 0); }
   }
+.news{
+    background-color: #a6785c;
+}
+.tickerheight{
+    height: 1px;
+}
   .tcontainer{
-    width: 100%;
     overflow: hidden;
-    
+    background-color: #a6785c;    
   }
   .ticker-wrap {
-    width: 100%;
+    width: auto;
     padding-left: 100%;
-    background-color: lightgoldenrodyellow;
   }
   .ticker-move {
     display: inline-block;
@@ -87,14 +94,13 @@ iframe{
     width: 100%;
 }
 .carousel{
-    background-color: rgba(255,0,0,0.3);
     width: 100%;
     float: none;
     margin: 0 auto;
 }
 .carousel-inner > .item > img {
   margin: auto;
-  width:400px;
+  width:700px;
   height:360px;
 }
 .about{
@@ -113,17 +119,46 @@ iframe{
 .bottom{
     margin-top: 10px;
     border: 1px solid black;
-        padding-left: 15px;
+    padding-left: 15px;
+}
+remedybutton{
+    padding: 0px 10px;
 }
 .footer{
-    background-color: black;
+    background-color: #a6785c;
     color: white;
     text-align: center;
     padding-top: 20px;
 }
-.homeremedies{
-    display: none;
+.digest{
+    background-color: saddlebrown;
+}
+.buttonarea{
+    margin: 50px 0px;
+}
+.buttonarea button{
+    border: none;
+    padding: 10px; 
+    background-color:#4CAF50; 
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+.stories{
+    padding-bottom: 25px;
+}
+.remedybutton{
+    margin: 10px 0px;
 }
 .testimony{
     display: none;
+}
+#story1, #story2{
+    display: none;
+}
+.storyimg{
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 50%;
 }
