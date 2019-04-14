@@ -1,137 +1,335 @@
-.logo{
-    height: 200px;
-    width: 200px;
-}
-.banner{
-    width: 900px;
-    }
 body{
-    background-image:url("https://i.imgur.com/Mp2yysG.jpg");
-    background-attachment: fixed;
-}
-p{
-    font-size: 16px;
-}
-.container{
-    background-color: lightgray;
-    border: solid 1px black;
-}
-.row{
-    padding:10px 0px; 
-}
-.top-bar{
-    background-color: darkblue;
-    padding-top: 50px;
-    padding-left: 45px;;
-}
-.nav-bar{
-    background-color: darkgreen; 
-}
-.navigation ul{
-  float: right;
-  list-style-type: none;
-  padding: 0, 50, 10, 50px;
-  margin:0;
-  position: relative;
-  z-index: 1;
-}
-.navigation > ul{
-  border: 1px solid #666;
-  background: red;
-}
-.navigation ul a{
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 0 30px;
-  line-height: 32px;
-  font-size: 100%;
-}
-.navigation ul li{
-  position: relative;
-  float: left;
-  margin:0;
-  padding:0;
-}
-.navigation ul li:hover{
-  background: blue;
-  
-}
-.navigation ul li a:hover {
-  color: hotpink;
-}
-.navigation ul ul{
-position:absolute;
-background: gray;
-padding: 0px;
-display:none;
-top: 100%;
-}
-.navigation ul ul li{
-float: none; 
-width: 213px;
-}
-.navigation ul ul a{
-  padding: 5px 10px;
-}
-.navigation ul ul ul{
-left: 100%;
-background: #333;
-top: 0;
-}
-.navigation ul li:hover > ul{
-display: block;
-}
-img{
-    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    /*min-width: 768px;*/
 }
 h1{
-    color: white;
+ font-size: 2px;
+}
+.pad{
+    padding-top: 50px;
+    text-align: right;
+}
+.row {
+    margin: auto;
+}
+.logo{
     
 }
-h1 a:hover { 
-    text-decoration:none; 
+.navbar{
+  background-color: #a6785c;
+  padding-top: 8px;
 }
-li{
-    padding: 10px;
-    display: block;
-    font-size: 18px;
-    list-style-type: none;
+ul {
+  float: right;
+  padding-right: 20px;
 }
-.profile{
-    padding: 20px;
+li {
+  display: inline-block;
+  padding-left: 8px;
 }
-.aboutme, .contactinfo,.flash, .gamereview{
-    background-color:darkseagreen;
-    padding: 5px 10px 5px 10px;
+ul a {
+  color: white;
+  font-size: 1.2em;
 }
-.website,.sci {
-    background-color:lightpink;
-    padding: 5px 10px 5px 10px;
+.nav a:hover {
+    text-decoration: underline;
+    color: white;
 }
-.mlbtableau{
-    background-color:yellow;
-    padding: 5px 10px 5px 10px;
+.nav h4 {
+  color: white;
+}
+ @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+.news{
+    background-color: #a6785c;
+    color: white;
+}
+
+  .tcontainer{
+    overflow: hidden;
+    background-color: #a6785c;    
+  }
+  .ticker-wrap {
+    width: auto;
+    padding-left: 100%;
+  }
+  .ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 20s;
+  }
+  .ticker-move:hover{
+    animation-play-state: paused;
+  }
+  .ticker-item{
+    display: inline-block;
+    padding: 0 2rem;
+    color: white;
+  }
+
+table {
+  height: 100px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+td {
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.location{
+    text-align: center;
+}
+iframe{
+    width: 100%;
+}
+.carousel{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+}
+.carousel-inner > .item > img {
+  margin: auto;
+  width:700px;
+  height:360px;
+}
+.about{
+    padding-top: 0px;
+    margin: 10px; 
+}
+.aboutdr p, .aboutdr h1{
+    padding: 0px 15px 0px 15px;
+}
+.top{
+    border: 1px solid black;
+}
+.top{
+    padding-left: 15px;
+}
+.bottom{
+    margin-top: 10px;
+    border: 1px solid black;
+    padding-left: 15px;
+}
+remedybutton{
+    padding: 0px 10px;
 }
 .footer{
+    background-color: #a6785c;
+    color: white;
     text-align: center;
-    color: black;
-    padding:10px 0px 0px 20px;
+    padding-top: 20px;
+}
+.digest{
+    background-color: saddlebrown;
+}
+.buttonarea{
+    margin: 50px 0px;
+}
+.buttonarea button{
+    border: none;
+    padding: 10px; 
+    background-color:#4CAF50; 
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+.digestcontent{
+    margin: 35px 0px;
+}
+.stories{
+    padding-bottom: 25px;
+}
+.remedybutton{
+    margin: 10px 0px;
+}
+.testimony{
+    display: none;
+}
+#story1, #story2{
+    display: none;
+}
+.storyimg{
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    /*min-width: 768px;*/
+}
+h1{
+ font-size: 2px;
+}
+.pad{
+    padding-top: 50px;
+    text-align: right;
+}
+.row {
+    margin: auto;
+}
+.logo{
+  max-height:150px;
+}
+.nav {
+  background-color: #a6785c;
+  padding-top: 8px;
+}
+ul {
+  float: right;
+  padding-right: 20px;
+}
+li {
+  display: inline-block;
+  padding-left: 8px;
+}
+ul a {
+  color: white;
+  font-size: 1.2em;
+}
+.nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+.nav h4 {
+  color: white;
+}
+ @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+.news{
+    background-color: #a6785c;
+}
+.tickerheight{
+    height: 1px;
+}
+  .tcontainer{
+    overflow: hidden;
+    background-color: #a6785c;    
+  }
+  .ticker-wrap {
+    width: auto;
+    padding-left: 100%;
+  }
+  .ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 20s;
+  }
+  .ticker-move:hover{
+    animation-play-state: paused;
+  }
+  .ticker-item{
+    display: inline-block;
+    padding: 0 2rem;
+  }
 
+table {
+  height: 100px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+td {
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.location{
+    text-align: center;
+}
+iframe{
+    width: 100%;
+}
+.carousel{
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+}
+.carousel-inner > .item > img {
+  margin: auto;
+  width:700px;
+  height:360px;
+}
+.about{
+    padding-top: 0px;
+    margin: 10px; 
+}
+.aboutdr p, .aboutdr h1{
+    padding: 0px 15px 0px 15px;
+}
+.top{
+    border: 1px solid black;
+    padding-left: 15px;
+}
+.bottom{
+    margin-top: 10px;
+    border: 1px solid black;
+    padding-left: 15px;
+}
+remedybutton{
+    padding: 0px 10px;
+}
+.footer{
+    background-color: #a6785c;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.digest{
+    background-color: white;
+}
 
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+.buttonarea{
+    margin: 50px 0px;
+    width: 100%
+}
+.buttonarea button{
+    border: none;
+    padding: 10px; 
+    background-color:#4CAF50; 
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+.stories{
+    padding-bottom: 25px;
+}
+.remedybutton{
+    margin: 10px 0px;
+}
+.testimony{
+    display: none;
+}
+#story1, #story2{
+    display: none;
+}
+.storyimg{
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+.faq{
+    text-align: center;
+    
 }
